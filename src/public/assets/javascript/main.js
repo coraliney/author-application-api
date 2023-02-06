@@ -25,7 +25,7 @@ document.getElementById("btn").addEventListener("click", async () => {
     }
   }`;
   let data = await graphQlQuery(url, getAllDogs);
-  //console.log(data);
+  //console.log (data);
   createHtml(data.getAllDogs);
 });
 const createHtml = (data) => {
